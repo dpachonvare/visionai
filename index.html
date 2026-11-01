@@ -167,6 +167,57 @@
     }
     .links a:hover { border-color: rgba(53, 242, 212, 0.6); }
 
+    /* "Sobre mí" card: same card style, a smaller heading, a short list of degrees and a LinkedIn button. */
+    .card + .card { margin-top: 16px; }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .facts {
+      list-style: none;
+      margin: 0 0 14px;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .facts li {
+      position: relative;
+      padding-left: 20px;
+      line-height: 1.4;
+    }
+    .facts li::before {   /* small dot in the logo's blue-to-teal gradient */
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.45em;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #5aa2ff, #35f2d4);
+    }
+    .facts small {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 6px;
+      padding: 11px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .button:hover { border-color: rgba(53, 242, 212, 0.6); }
+
     footer {
       margin-top: 28px;
       color: var(--muted);
@@ -199,6 +250,19 @@
       <p>Si encuentro un error, lo corrijo a la vista y lo digo en el mismo vídeo o en un comentario fijado.</p>
       <p>También vendo Jarvis, un asistente de voz para Mac. Cuando hablo de él, lo verás dicho.</p>
     </article>
+
+    <section class="card" aria-labelledby="sobre-mi">
+      <p class="eyebrow">Sobre mí</p>
+      <h2 id="sobre-mi">Diego Pachon</h2>
+      <p>Soy colombiano y vivo en Brisbane. Trabajo con datos desde 2013: empecé en Colombia y hoy soy ingeniero de datos y AI engineer en el sector público de Australia, donde diseño arquitecturas de datos, procesos en Python y PySpark y paneles en Power BI sobre Microsoft Fabric.</p>
+      <ul class="facts">
+        <li>Máster en Sistemas de Información Empresarial<small>Torrens University Australia, 2023</small></li>
+        <li>Especialista en Gerencia de Proyectos e Inteligencia de Negocios<small>Politécnico Grancolombiano, Colombia</small></li>
+        <li>Administrador de empresas<small>UNIMINUTO, Colombia</small></li>
+      </ul>
+      <p>También construyo productos de principio a fin: un sistema de seguimiento de comisiones, un asistente con IA generativa para atender clientes y Jarvis, un asistente de voz para Mac.</p>
+      <a class="button" href="https://www.linkedin.com/in/diego-pachon-672506166/">Ver mi perfil en LinkedIn</a>
+    </section>
 
     <nav class="links" aria-label="VisionAI en redes">
       <a href="https://www.instagram.com/visionai_es/">Instagram <span>@visionai_es</span></a>
