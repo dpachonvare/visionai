@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quién hace VisionAI · Responsable editorial</title>
+  <meta name="description" content="Quién edita VisionAI, cómo se hacen sus vídeos y cómo contactar.">
+  <link rel="canonical" href="https://dpachonvare.github.io/visionai/">
+  <meta name="theme-color" content="#141a63">
+
+  <!-- Link previews (WhatsApp, iMessage, Instagram DMs, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="VisionAI">
+  <meta property="og:title" content="Quién hace VisionAI">
+  <meta property="og:description" content="Responsable editorial de VisionAI: lo nuevo de la IA, probado y en español.">
+  <meta property="og:url" content="https://dpachonvare.github.io/visionai/">
+  <meta property="og:image" content="https://dpachonvare.github.io/visionai/assets/visionai-512.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    /* Inter is self-hosted (no requests to third parties, which keeps visitors' IPs private). */
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("assets/fonts/inter-400.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url("assets/fonts/inter-600.woff2") format("woff2");
+    }
+
+    /* Brand tokens, taken from marketing/marca/marca.js (the V logo). */
+    :root {
+      --navy-1: #1b2a8f;
+      --navy-2: #141a63;
+      --navy-3: #0b3a52;
+      --text: #eef3ff;
+      --muted: #b8c4ee;
+      --teal: #35f2d4;
+      --line: rgba(255, 255, 255, 0.14);
+      --card: rgba(9, 14, 60, 0.55);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: var(--navy-2);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      /* The same light halos as the logo: blue top-left, teal right, violet bottom. */
+      background:
+        radial-gradient(circle at 12% 6%, rgba(40, 110, 255, 0.55), transparent 42%),
+        radial-gradient(circle at 98% 32%, rgba(0, 220, 190, 0.30), transparent 40%),
+        radial-gradient(circle at 40% 104%, rgba(122, 60, 255, 0.50), transparent 48%),
+        linear-gradient(140deg, var(--navy-1) 0%, var(--navy-2) 55%, var(--navy-3) 100%);
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 40px 16px 48px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .brand img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      box-shadow: 0 0 28px rgba(70, 140, 255, 0.45);
+      flex: none;
+    }
+    .brand-name {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .brand-tag {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 28px 22px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .card p { margin: 0 0 14px; }
+    .card p:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+
+    a {
+      color: var(--teal);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .links {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .links a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .links a span {
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .links a:hover { border-color: rgba(53, 242, 212, 0.6); }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (min-width: 600px) {
+      .wrap { padding-top: 72px; }
+      .card { padding: 36px 36px; }
+      h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <img src="assets/visionai-192.png" width="64" height="64" alt="">
+      <div>
+        <p class="brand-name">VisionAI</p>
+        <p class="brand-tag">Lo nuevo de la IA, probado y en español.</p>
+      </div>
+    </header>
+
+    <article class="card">
+      <p class="eyebrow">Responsable editorial</p>
+      <h1>Quién hace VisionAI</h1>
+      <p>VisionAI lo edita <strong>Diego Pachon</strong>, desde Australia. Contacto: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#101;&#103;&#111;&#46;&#112;&#97;&#99;&#104;&#111;&#110;&#46;&#118;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#100;&#105;&#101;&#103;&#111;&#46;&#112;&#97;&#99;&#104;&#111;&#110;&#46;&#118;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>.</p>
+      <p>Las voces son mías o generadas con IA, y cada vídeo lo dice. Los guiones se escriben con ayuda de IA y los reviso yo: cada dato sale de una fuente primaria, que se ve en el vídeo. Lo que digo que he probado, lo he probado.</p>
+      <p>Si encuentro un error, lo corrijo a la vista y lo digo en el mismo vídeo o en un comentario fijado.</p>
+      <p>También vendo Jarvis, un asistente de voz para Mac. Cuando hablo de él, lo verás dicho.</p>
+    </article>
+
+    <nav class="links" aria-label="VisionAI en redes">
+      <a href="https://www.instagram.com/visionai_es/">Instagram <span>@visionai_es</span></a>
+      <a href="https://www.tiktok.com/@visionai.es">TikTok <span>@visionai.es</span></a>
+      <a href="https://www.youtube.com/@visionai_es">YouTube <span>@visionai_es</span></a>
+    </nav>
+
+    <footer>Actualizado el 1 de noviembre de 2026.</footer>
+  </main>
+</body>
+</html>
