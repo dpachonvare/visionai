@@ -218,6 +218,17 @@
     }
     .button:hover { border-color: rgba(53, 242, 212, 0.6); }
 
+    .role {               /* job title under the name: title in teal, place in muted grey */
+      margin: -6px 0 16px;
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .role span {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
     footer {
       margin-top: 28px;
       color: var(--muted);
@@ -254,13 +265,13 @@
     <section class="card" aria-labelledby="sobre-mi">
       <p class="eyebrow">Sobre mí</p>
       <h2 id="sobre-mi">Diego Pachon</h2>
-      <p>Soy colombiano y vivo en Brisbane. Trabajo con datos desde 2013: empecé en Colombia y hoy soy ingeniero de datos y AI engineer en el sector público de Australia, donde diseño arquitecturas de datos, procesos en Python y PySpark y paneles en Power BI sobre Microsoft Fabric.</p>
+      <p class="role">AI Data Engineer <span>· Brisbane, Australia</span></p>
+      <p>Ayudo a empresas a construir aplicaciones y a mejorar sus procesos con datos e IA: plataformas de datos en Microsoft Fabric, CRMs y agentes de IA para atención al cliente.</p>
+      <p>Más de 10 años trabajando con datos, en Colombia y en Australia.</p>
       <ul class="facts">
-        <li>Máster en Sistemas de Información Empresarial<small>Torrens University Australia, 2023</small></li>
-        <li>Especialista en Gerencia de Proyectos e Inteligencia de Negocios<small>Politécnico Grancolombiano, Colombia</small></li>
-        <li>Administrador de empresas<small>UNIMINUTO, Colombia</small></li>
+        <li>Máster en Sistemas de Información Empresarial<small>Torrens University Australia</small></li>
+        <li>Especialista en Gerencia de Proyectos e Inteligencia de Negocios<small>Politécnico Grancolombiano</small></li>
       </ul>
-      <p>También construyo productos de principio a fin: un sistema de seguimiento de comisiones, un asistente con IA generativa para atender clientes y Jarvis, un asistente de voz para Mac.</p>
       <a class="button" href="https://www.linkedin.com/in/diego-pachon-672506166/">Ver mi perfil en LinkedIn</a>
     </section>
 
