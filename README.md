@@ -1,6 +1,6 @@
 # VisionAI · editorial page
 
-Public "who makes VisionAI" page (responsable editorial), linked from the VisionAI profiles on Instagram, TikTok and YouTube. It states who edits the channel, how to contact him, how the videos are made (AI voices labelled, AI-assisted scripts reviewed by a person, primary sources on screen) and that he sells Jarvis.
+Public "who makes VisionAI" page (responsable editorial), linked from the VisionAI profiles on Instagram, TikTok and YouTube. It states who edits the channel, how to contact him, how the videos are made (AI voices labelled, AI-assisted scripts reviewed by a person, primary sources on screen).
 
 Live at: https://dpachonvare.github.io/visionai/ (GitHub Pages, branch `main`, folder `/`).
 
@@ -32,4 +32,4 @@ Live at: https://dpachonvare.github.io/visionai/ (GitHub Pages, branch `main`, f
 2. Update the date in `<footer>`.
 3. Commit and push to `main`. GitHub Pages republishes in about a minute.
 
-The source text lives in the Jarvis repo, `MARKETING.md`, section 4, "Responsable editorial". Keep both in sync.
+The source text lives in the Jarvis repo, `MARKETING.md`, section 4, "Responsable editorial". Keep both in sync. On 18 November 2026 the sentence about selling Jarvis was removed from this page at Diego's request (the channel is presented only as AI news and explainers for now); `MARKETING.md` still carries it until it is updated there.
